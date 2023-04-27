@@ -1,9 +1,9 @@
 import { rest } from "msw";
 
 let todos = [
-  { id: 1, text: "먹기" },
-  { id: 2, text: "자기" },
-  { id: 3, text: "놀기" }
+  { id: 1, text: "집에" },
+  { id: 2, text: "가고" },
+  { id: 3, text: "싶다" }
 ];
 
 export const handlers = [
