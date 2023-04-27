@@ -2,19 +2,16 @@
 
 # # 프로젝트 생성
 
----
 
 **`$ npx create-react-app msw`**
 
 # # MSW 라이브러리 설치
 
----
 
 **`$ npm i -D msw`**
 
 # # 서비스 워커 코드 생성
 
----
 
 **`$ npx msw init public/ --save`**
 
@@ -23,7 +20,6 @@
 
 # # 요청 핸들러
 
----
 
 - REST API를 모킹할 때 `msw` 모듈의 `rest`객체를 사용.
 - 할일 목록을 **조회**하가 위한 `GET /todos` 앤드포인트는 배열에 담긴 3개의 할일을 **응답**
@@ -81,7 +77,6 @@ export const handlers = [
 
 # # 서비스 워커 생성
 
----
 
 - `msw`모듈에서 제공하는 `setupWorker()` 함수를 사용해서 서비스 워커를 생성하기.
 - 위에서 작성한 요청 핸들러 코드를 불러와서  `setupWorker()` 함수의 인자로 넘기기
@@ -96,7 +91,6 @@ export const worker = setupWorker(...handlers);**
 
 # # 서비스 워커 삽입
 
----
 
 ```jsx
 // src/index.js
@@ -122,7 +116,6 @@ root.render(
 
 # # 서비스 워커 테스트
 
----
 
 - 애플리케이션 구동 후 브라우저에서 열면 콘솔에 다음과 같이 **모킹 활성화되었다**는 메시지 출력
 
@@ -130,7 +123,6 @@ root.render(
 
 # # UI
 
----
 
 ```jsx
 import { useEffect, useState } from "react";
