@@ -131,7 +131,7 @@ root.render(
 
 - 애플리케이션 구동 후 브라우저에서 열면 콘솔에 다음과 같이 **모킹 활성화되었다**는 메시지 출력
 
-![Untitled](MSW%20Test%2032a24bdc96fb44cbb6a75543a9037735/Untitled.png)
+![Untitled](src/img/MSW.png)
 
 # # UI
 
